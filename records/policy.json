@@ -1,0 +1,9 @@
+{
+  "watch_seconds": 120,
+  "washout_seconds": 45,
+  "quality_max_ms": 750,
+  "quality_gap_s": 8,
+  "quality_min_sessions": 2,
+  "confidence": 0.9,
+  "rollback_if_bad_fraction_over": 0.3
+}

@@ -1,0 +1,6 @@
+door,chain,cache,start,end,ready_at
+x,stream1,cache1,0,1200,0
+y,stream2,cache1,0,600,0
+z,stream3,cache3,0,1200,0
+y,backup,cache4,600,1200,615
+z,backup,cache4,900,1200,615

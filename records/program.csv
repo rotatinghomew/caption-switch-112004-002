@@ -1,0 +1,11 @@
+block,window,chain,start,end,planned
+p1,a1,stream1,0,300,dual
+p1,a2,stream1,300,600,base
+p2,b1,stream2,0,300,base
+p2,b2,stream2,300,600,dual
+p3,a3,stream1,600,900,base
+p3,a4,stream1,900,1200,dual
+p4,c1,stream3,0,300,dual
+p4,c2,stream3,300,600,base
+p5,c3,stream3,600,900,dual
+p5,c4,stream3,900,1200,base

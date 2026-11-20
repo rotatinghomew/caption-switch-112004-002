@@ -1,0 +1,5 @@
+feed,start,end,state,known_at
+stream1,0,1200,partial,1200
+stream3,0,900,complete,900
+stream3,900,1200,outage,910
+backup,615,1200,complete,1200

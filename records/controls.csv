@@ -1,0 +1,7 @@
+at,control,kind,chain,action,origin,status
+350,c1,request,stream1,off,导播,pending
+372,c1,receipt,stream1,off,导播,applied
+795,c2,request,stream3,off,导播,pending
+809,c2,receipt,stream3,off,导播,failed
+838,c3,request,stream3,off,导播,pending
+840,c3,receipt,stream3,off,导播,applied
