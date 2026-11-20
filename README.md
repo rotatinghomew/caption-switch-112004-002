@@ -20,6 +20,11 @@ CSV 使用 UTF-8、首行字段名，`-` 表示来源未填；JSON 使用原生�
 - `observability.csv`：`feed`, `start`, `end`, `state`, `known_at`。
 - `controls.csv`：`at`, `control`, `kind`, `chain`, `action`, `origin`, `status`。
 
+## 补充来源说明
+
+- `next_program.csv`：备用站后续配对的可播时段与接入范围。分配由导播事先备案，control 两段颠倒，exp-empty 缺同范围的另一段。所有时刻为节目启播后的秒数。
+- `handoffs.json`：交接台与备用站的独立消息流。以 at 分辨送达顺序，effective_at 只在 applied 时明确。operation 是同一请求的双方关联号；收到 accepted 可查询但未生效。fallback 标记原路由、备用路由与被保护入口。
+
 ## 本地检查
 
 使用 Python 3.11 标准库，无需安装第三方依赖。构建检查和来源契约测试：

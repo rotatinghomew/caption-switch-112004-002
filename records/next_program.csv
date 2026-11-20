@@ -1,0 +1,7 @@
+cycle,pair,chain,cache,scope,start,end,planned,signed_at,route_gen
+6,exp-next,auxA,k7,港澳入口,1320,1500,base,1180,7
+6,exp-next,auxA,k7,港澳入口,1500,1680,dual,1180,7
+6,control,auxB,k8,区域入口,1320,1500,dual,1180,7
+6,control,auxB,k8,区域入口,1500,1680,base,1180,7
+7,exp-empty,auxA,k9,港澳入口,1820,2000,dual,1720,8
+7,exp-empty,auxA,k9,本地入口,2000,2180,base,1720,8

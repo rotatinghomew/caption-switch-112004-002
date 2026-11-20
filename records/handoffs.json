@@ -1,0 +1,544 @@
+{
+  "request_fields": [
+    "operation",
+    "route_gen",
+    "chain",
+    "mode",
+    "start",
+    "end",
+    "scope",
+    "station"
+  ],
+  "mode_change": {
+    "operation": "x7",
+    "route_gen": 7,
+    "chain": "auxA",
+    "mode": "dual",
+    "start": 1500,
+    "end": 1680,
+    "scope": "港澳入口",
+    "station": "backup"
+  },
+  "route_generations": [
+    {
+      "at": 1180,
+      "route_gen": 7,
+      "doors": {
+        "x": "k6",
+        "y": "k7",
+        "z": "k8"
+      }
+    },
+    {
+      "at": 1470,
+      "route_gen": 8,
+      "doors": {
+        "x": "k6",
+        "y": "k9",
+        "z": "k9"
+      }
+    }
+  ],
+  "fallback": {
+    "old_chain": "stream3",
+    "backup_chain": "auxA",
+    "scope": [
+      "y"
+    ]
+  },
+  "events": [
+    {
+      "at": 1410,
+      "operation": "x7",
+      "station": "dispatcher",
+      "kind": "accepted",
+      "effective_at": null,
+      "route_gen": 7
+    },
+    {
+      "at": 1420,
+      "operation": "x7",
+      "station": "backup",
+      "kind": "accepted",
+      "effective_at": null,
+      "route_gen": 7
+    },
+    {
+      "at": 1430,
+      "operation": "m2",
+      "station": "director",
+      "kind": "manual_lock",
+      "door": "z",
+      "effective_at": 1430,
+      "route_gen": 7
+    },
+    {
+      "at": 1455,
+      "operation": "x7",
+      "station": "backup",
+      "kind": "applied",
+      "effective_at": 1453,
+      "route_gen": 7
+    },
+    {
+      "at": 1480,
+      "operation": "x7",
+      "station": "dispatcher",
+      "kind": "rejected",
+      "effective_at": null,
+      "route_gen": 8
+    },
+    {
+      "at": 1501,
+      "operation": "m2",
+      "station": "director",
+      "kind": "proof",
+      "door": "z",
+      "effective_at": 1430,
+      "route_gen": 7
+    },
+    {
+      "at": 1745,
+      "operation": "m2",
+      "station": "director",
+      "kind": "manual_release",
+      "door": "z",
+      "effective_at": 1745,
+      "route_gen": 8
+    }
+  ],
+  "observations": [
+    {
+      "session": "obs0",
+      "window_start": 1320,
+      "entry": "y",
+      "watched": 30,
+      "reported_at": 1660,
+      "subtitle_delay_ms": 240,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs1",
+      "window_start": 1500,
+      "entry": "y",
+      "watched": 125,
+      "reported_at": 1661,
+      "subtitle_delay_ms": 283,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs2",
+      "window_start": 1320,
+      "entry": "y",
+      "watched": 220,
+      "reported_at": 1662,
+      "subtitle_delay_ms": 326,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs3",
+      "window_start": 1500,
+      "entry": "y",
+      "watched": 315,
+      "reported_at": 1663,
+      "subtitle_delay_ms": 369,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs4",
+      "window_start": 1320,
+      "entry": "y",
+      "watched": 87,
+      "reported_at": 1664,
+      "subtitle_delay_ms": 412,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs5",
+      "window_start": 1500,
+      "entry": "y",
+      "watched": 182,
+      "reported_at": 1665,
+      "subtitle_delay_ms": 455,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs6",
+      "window_start": 1320,
+      "entry": "y",
+      "watched": 277,
+      "reported_at": 1666,
+      "subtitle_delay_ms": 498,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs7",
+      "window_start": 1500,
+      "entry": "y",
+      "watched": 49,
+      "reported_at": 1667,
+      "subtitle_delay_ms": 541,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs8",
+      "window_start": 1320,
+      "entry": "y",
+      "watched": 144,
+      "reported_at": 1668,
+      "subtitle_delay_ms": 584,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs9",
+      "window_start": 1500,
+      "entry": "y",
+      "watched": 239,
+      "reported_at": 1669,
+      "subtitle_delay_ms": 627,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs10",
+      "window_start": 1320,
+      "entry": "y",
+      "watched": 334,
+      "reported_at": 1670,
+      "subtitle_delay_ms": 670,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs11",
+      "window_start": 1500,
+      "entry": "y",
+      "watched": null,
+      "reported_at": 1671,
+      "subtitle_delay_ms": 713,
+      "coverage": "gap"
+    },
+    {
+      "session": "obs12",
+      "window_start": 1320,
+      "entry": "y",
+      "watched": 201,
+      "reported_at": 1672,
+      "subtitle_delay_ms": 756,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs13",
+      "window_start": 1500,
+      "entry": "y",
+      "watched": null,
+      "reported_at": 1673,
+      "subtitle_delay_ms": 799,
+      "coverage": "gap"
+    },
+    {
+      "session": "obs14",
+      "window_start": 1320,
+      "entry": "y",
+      "watched": 68,
+      "reported_at": 1674,
+      "subtitle_delay_ms": 842,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs15",
+      "window_start": 1500,
+      "entry": "y",
+      "watched": 163,
+      "reported_at": 1675,
+      "subtitle_delay_ms": 885,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs16",
+      "window_start": 1320,
+      "entry": "y",
+      "watched": 258,
+      "reported_at": 1676,
+      "subtitle_delay_ms": 928,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs17",
+      "window_start": 1500,
+      "entry": "y",
+      "watched": 30,
+      "reported_at": 1677,
+      "subtitle_delay_ms": 971,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs18",
+      "window_start": 1320,
+      "entry": "y",
+      "watched": 125,
+      "reported_at": 1678,
+      "subtitle_delay_ms": 1014,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs19",
+      "window_start": 1500,
+      "entry": "y",
+      "watched": 220,
+      "reported_at": 1679,
+      "subtitle_delay_ms": 277,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs20",
+      "window_start": 1320,
+      "entry": "y",
+      "watched": 315,
+      "reported_at": 1680,
+      "subtitle_delay_ms": 320,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs21",
+      "window_start": 1500,
+      "entry": "y",
+      "watched": 87,
+      "reported_at": 1681,
+      "subtitle_delay_ms": 363,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs22",
+      "window_start": 1320,
+      "entry": "y",
+      "watched": 182,
+      "reported_at": 1682,
+      "subtitle_delay_ms": 406,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs23",
+      "window_start": 1500,
+      "entry": "y",
+      "watched": 277,
+      "reported_at": 1683,
+      "subtitle_delay_ms": 449,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs24",
+      "window_start": 1320,
+      "entry": "z",
+      "watched": 49,
+      "reported_at": 1684,
+      "subtitle_delay_ms": 492,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs25",
+      "window_start": 1500,
+      "entry": "z",
+      "watched": 144,
+      "reported_at": 1685,
+      "subtitle_delay_ms": 535,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs26",
+      "window_start": 1320,
+      "entry": "z",
+      "watched": 239,
+      "reported_at": 1686,
+      "subtitle_delay_ms": 578,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs27",
+      "window_start": 1500,
+      "entry": "z",
+      "watched": 334,
+      "reported_at": 1687,
+      "subtitle_delay_ms": 621,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs28",
+      "window_start": 1320,
+      "entry": "z",
+      "watched": 106,
+      "reported_at": 1688,
+      "subtitle_delay_ms": 664,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs29",
+      "window_start": 1500,
+      "entry": "z",
+      "watched": 201,
+      "reported_at": 1689,
+      "subtitle_delay_ms": 707,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs30",
+      "window_start": 1320,
+      "entry": "z",
+      "watched": null,
+      "reported_at": 1690,
+      "subtitle_delay_ms": 750,
+      "coverage": "gap"
+    },
+    {
+      "session": "obs31",
+      "window_start": 1500,
+      "entry": "z",
+      "watched": 68,
+      "reported_at": 1691,
+      "subtitle_delay_ms": 793,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs32",
+      "window_start": 1320,
+      "entry": "z",
+      "watched": 163,
+      "reported_at": 1692,
+      "subtitle_delay_ms": 836,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs33",
+      "window_start": 1500,
+      "entry": "z",
+      "watched": 258,
+      "reported_at": 1693,
+      "subtitle_delay_ms": 879,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs34",
+      "window_start": 1320,
+      "entry": "z",
+      "watched": 30,
+      "reported_at": 1694,
+      "subtitle_delay_ms": 922,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs35",
+      "window_start": 1500,
+      "entry": "z",
+      "watched": 125,
+      "reported_at": 1695,
+      "subtitle_delay_ms": 965,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs36",
+      "window_start": 1320,
+      "entry": "z",
+      "watched": 220,
+      "reported_at": 1696,
+      "subtitle_delay_ms": 1008,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs37",
+      "window_start": 1500,
+      "entry": "z",
+      "watched": 315,
+      "reported_at": 1697,
+      "subtitle_delay_ms": 271,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs38",
+      "window_start": 1320,
+      "entry": "z",
+      "watched": 87,
+      "reported_at": 1698,
+      "subtitle_delay_ms": 314,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs39",
+      "window_start": 1500,
+      "entry": "z",
+      "watched": 182,
+      "reported_at": 1699,
+      "subtitle_delay_ms": 357,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs40",
+      "window_start": 1320,
+      "entry": "z",
+      "watched": 277,
+      "reported_at": 1700,
+      "subtitle_delay_ms": 400,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs41",
+      "window_start": 1500,
+      "entry": "z",
+      "watched": 49,
+      "reported_at": 1701,
+      "subtitle_delay_ms": 443,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs42",
+      "window_start": 1320,
+      "entry": "z",
+      "watched": 144,
+      "reported_at": 1702,
+      "subtitle_delay_ms": 486,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs43",
+      "window_start": 1500,
+      "entry": "z",
+      "watched": 239,
+      "reported_at": 1703,
+      "subtitle_delay_ms": 529,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs44",
+      "window_start": 1320,
+      "entry": "z",
+      "watched": 334,
+      "reported_at": 2454,
+      "subtitle_delay_ms": 572,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs45",
+      "window_start": 1500,
+      "entry": "z",
+      "watched": 106,
+      "reported_at": 2455,
+      "subtitle_delay_ms": 615,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs46",
+      "window_start": 1320,
+      "entry": "z",
+      "watched": 201,
+      "reported_at": 2456,
+      "subtitle_delay_ms": 658,
+      "coverage": "closed"
+    },
+    {
+      "session": "obs47",
+      "window_start": 1500,
+      "entry": "z",
+      "watched": 296,
+      "reported_at": 2457,
+      "subtitle_delay_ms": 701,
+      "coverage": "closed"
+    }
+  ]
+}
